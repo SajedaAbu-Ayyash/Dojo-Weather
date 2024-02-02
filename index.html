@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>DojoWeather</h1>
+      <nav>
+        <a href="#" onclick="displayAlert()">Burbank</a>
+        <a href="#" onclick="displayAlert()">Chicago</a>
+        <a href="#" onclick="displayAlert()">Dallas</a>
+      </nav>
+    </header>
+    <main>
+      <div class="div-0">
+        <h2>San Jose</h2>
+        <p>
+          <label for="temperatures">show temperature in</label>
+          <select
+            name="temperature-unit"
+            id="temperature-unit"
+            onchange="changeTemperatureValue(this)"
+          >
+            <option value="c">C</option>
+            <option value="f">F</option>
+          </select>
+        </p>
+      </div>
+      <div class="div-1">
+        <div class="status">
+          <h2>Today</h2>
+          <img src="assets/some_rain.png" alt="rainy" />
+          <p id="temperatures">some rain</p>
+          <div class="p-values">
+            <p class="red-value">24</p>
+            <p class="blue-value">18</p>
+          </div>
+        </div>
+        <div class="status">
+          <h2>Tomorrow</h2>
+          <img src="assets/some_sun.png" alt="sunny" />
+          <p id="temperatures">some sun</p>
+          <div class="p-values">
+            <p class="red-value">27</p>
+            <p class="blue-value">19</p>
+          </div>
+        </div>
+        <div class="status">
+          <h2>Friday</h2>
+          <img src="assets/some_clouds.png" alt="cloudy" />
+          <p id="temperatures">some clouds</p>
+          <div class="p-values">
+            <p class="red-value">21</p>
+            <p class="blue-value">16</p>
+          </div>
+        </div>
+        <div class="status">
+          <h2>Saturday</h2>
+          <img src="assets/some_sun.png" alt="sunny" />
+          <p id="temperatures">some sun</p>
+          <div class="p-values">
+            <p class="red-value">26</p>
+            <p class="blue-value">21</p>
+          </div>
+        </div>
+      </div>
+      <div class="div-2">
+        <img src="assets/cookie.png" alt="cookie" />
+        <p>
+          <span>Stop! Cookie time</span> <br />
+          we use cookies(sadly not edible ones) to personalize content and ads,
+          to provide social media features and to analyse our traffic.
+          <a href="#">Read more...</a>
+        </p>
+        <button onclick="acceptCookies()">I Accept</button>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
